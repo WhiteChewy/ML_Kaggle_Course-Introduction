@@ -11,7 +11,7 @@ y = filtered_melbourne_data.Price
 melbourne_features = ['Rooms', 'Bathroom', 'Landsize', 'BuildingArea', 
                         'YearBuilt', 'Lattitude', 'Longtitude']
 X = filtered_melbourne_data[melbourne_features]
-
+print(X)
 # Fit the model
 melbourn_model = DecisionTreeRegressor()
 melbourn_model.fit(X, y)
